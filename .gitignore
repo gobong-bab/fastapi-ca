@@ -1,0 +1,15 @@
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+# IDE-specific
+.idea/
+.vscode/
+http/
