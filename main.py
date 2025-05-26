@@ -9,7 +9,10 @@ import user.interface.controllers.user_controller as user_controller_module
 
 app = FastAPI()
 container = Container()
-# Wire the user_controller module explicitly for dependency injection
+"""
+현재 이렇게 해줘야 해결이 되는거 같다
+나중에 lifespan 설정해서 하는 방법도 찾아보자.
+"""
 container.wire(modules=[user_controller_module])
 app.container = container
 app.include_router(user_routers)
